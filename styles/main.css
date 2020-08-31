@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap');
+
+* {
+    font-family: 'Source Sans Pro', sans-serif;
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+
+    min-height: 100vh;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: #ecf0f1;
+}
+
+.jbetween {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container {
+    padding: 0 10%;
+}
+
+.card {
+    background-color: white;
+    border-radius: 4px;
+}
+
+.card > .title {
+    position: relative;
+    font-weight: 700;
+    font-size: 1.3rem;
+    padding: 15px 30px;
+    color: #2c3e50;
+}
+
+.card > .title::after {
+    content: '';
+    position: absolute;
+    width: 50%;
+    height: 1px;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    background-color: rgba(44, 62, 80, 0.3);
+}
+
+.card > .body {
+    padding: 15px 30px;
+    font-size: 0.9rem;
+    color: #2c3e50;
+}
+
+.form-group {
+    display: block;
+    margin-bottom: 15px;
+}
+
+.form-group > label {
+    display: block;
+}
+
+.input {
+    display: block;
+    width: 100%;
+    border-radius: 4px;
+    border: solid 2px #dee3e4;
+    outline: none;
+    padding: 12px 16px;
+    transition: border .2s ease-in-out;
+    resize: vertical;
+}
+
+.input:focus {
+    border: solid 2px #2ecc71; 
+}
+
+.input::placeholder {
+    font-size: 0.9rem;
+}
+
+.submit {
+    cursor: pointer;
+    background-color: #2ecc71;
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 1rem;
+    color: white;
+    border: 0;
+    outline: none;
+    padding: 8px 18px;
+}
+
+a {
+    color: #2c3e50;
+    text-decoration: none;
+    transition: color .2s ease-in-out;
+}
+
+a:hover {
+    color: #2ecc71;
+}
+
+.product {
+    border: dashed 2px #dee3e4;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    padding: 8px 16px;
+    transition: border .4s ease-in-out;
+}
+
+.product:hover {
+    border: dashed 2px #2ecc71;
+}
+
+.product .key {
+    font-weight: 700;
+}
